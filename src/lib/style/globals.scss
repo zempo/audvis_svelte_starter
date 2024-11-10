@@ -1,0 +1,81 @@
+@use './scenes';
+// @use './utils';
+// @use './code';
+// @use './content';
+@use './typography';
+@use './reset';
+@use './vars';
+
+html[data-theme='Night'] {
+	color-scheme: dark;
+}
+html[data-theme='Day'] {
+	color-scheme: light;
+}
+// background: #fbf4e7; // Light paper-like background color
+// border: 1px solid #e0d0b7; // A darker border for the paper
+
+html {
+	--null: rgba(0, 0, 0, 0);
+	--insetShadow: inset 0 0 10px var(--shadowClr1);
+	--insetShadow2: inset 0 0 10px var(--shadowClr2);
+	--shadow1: 0 3px 6px var(--bxClr1), 0 3px 6px var(--bxClr2);
+	--shadow2: 0 3px 6px var(--bxClr1), 0 3px 6px var(--bxClr2);
+	--shadowTop: 0 -2px 3px var(--bxClr1), 0 -2px 3px var(--bxClr2);
+	--shadowBtm: 0 4px 6px var(--bxClr1), 0 4px 6px var(--bxClr2);
+	// 0px -4px 6px rgba(0, 0, 0, 0.2);
+	// color: var(--textFooter);
+	scroll-behavior: smooth;
+
+	nav {
+		list-style-type: none;
+		display: flex;
+		// width: calc(100);
+		// max-width: 100rem;
+		padding: 1rem;
+		ul {
+			padding-left: 0;
+		}
+		background-color: rgba(72, 68, 68, 0.87);
+		color: rgb(237, 244, 225);
+		li {
+			margin: 0.5rem 1rem;
+			font-weight: bolder;
+			text-transform: uppercase;
+			a {
+				text-decoration: none;
+			}
+		}
+	}
+	.app_main {
+		// padding: 2rem;
+	}
+	// *SVGs, target path/g fills
+	.em_text {
+		// color: var(--textHead);
+		font-weight: bold;
+	}
+	// button {
+	// 	background-color: var(--appMain);
+	// 	color: var(--textMain);
+	// 	border: 1px solid var(--textMain);
+	// }
+	// .target_stroke {
+	// 	stroke: var(--textMain);
+	// }
+	// .target_fill {
+	// 	fill: var(--textMain);
+	// }
+	// .target_both {
+	// 	fill: var(--textMain);
+	// 	stroke: var(--textMain);
+	// }
+	// .target_fill_head {
+	// 	fill: var(--textMain);
+	// }
+	// .scroll_btn {
+	// 	.target_fill {
+	// 		fill: var(--textHead);
+	// 	}
+	// }
+}

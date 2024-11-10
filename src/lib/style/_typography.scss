@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Shadows+Into+Light+Two&display=swap');
+
+$fontMain: 'Shadows Into Light Two', cursive;
+
+h1,
+h2,
+h3,
+p,
+button,
+nav,
+a,
+li {
+	font-family: $fontMain;
+}

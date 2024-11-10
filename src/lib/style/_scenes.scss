@@ -1,0 +1,30 @@
+$breakpoints: (
+	'p_med': 560px,
+	'p_wide': 650px,
+	'phab_min': 800px,
+	't_min': 1200px,
+	't_med': 1300px,
+	't_max': 1450px,
+	'd_min': 1600px,
+	'd_med': 1750px
+);
+
+@mixin mq($width, $type: min) {
+	@if map_has_key($breakpoints, $width) {
+		$width: map_get($breakpoints, $width);
+		@if $type == max {
+			$width: $width - 1px;
+		}
+		@media only screen and (#{$type}-width: $width) {
+			@content;
+		}
+	}
+}
+
+//  *canvas
+.audvis_scene {
+	display: block;
+	width: 100%;
+	max-width: 2000px;
+	height: 100vh;
+}
