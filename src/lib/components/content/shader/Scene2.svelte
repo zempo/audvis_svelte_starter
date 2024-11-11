@@ -1,6 +1,6 @@
 <script>
 	import { onDestroy, onMount } from 'svelte';
-	import audFrag1 from './aud1.frag';
+	import audFrag2 from './aud2.frag';
 	import * as THREE from 'three';
 
 	let audio;
@@ -53,7 +53,7 @@
 		// Plane with Shader Material
 		const geometry = new THREE.PlaneGeometry(5, 5);
 		material = new THREE.ShaderMaterial({
-			fragmentShader: audFrag1,
+			fragmentShader: audFrag2,
 			vertexShader: `
 								varying vec2 vUv;
 								void main() {

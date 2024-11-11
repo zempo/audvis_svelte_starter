@@ -5,6 +5,7 @@ precision mediump float;
 uniform float uAudio; // Audio data passed from JavaScript
 uniform vec2 uResolution; // Canvas resolution
 uniform float uTime; // Time for continuous color cycling
+varying vec2 vUv;
 
 void main() {
     vec2 st = gl_FragCoord.xy / uResolution; // Normalize coordinates
