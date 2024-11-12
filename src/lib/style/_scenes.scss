@@ -24,7 +24,8 @@ $breakpoints: (
 //  *canvas
 .audvis_scene {
 	display: block;
-	width: 100%;
+	width: 100% !important;
 	max-width: 2000px;
 	height: 100vh;
+	margin-bottom: 1rem;
 }

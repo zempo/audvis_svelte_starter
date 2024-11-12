@@ -23,8 +23,8 @@ void main(){
 
   // float angle = uTime * 0.3;
   float colorIntensity = smoothstep(0.0, 1.0, uAudio);
-  float angle = uTime * 0.05 + (colorIntensity / 10.0);
-  for (int i = 0; i < 8; i++){
+  float angle = uTime * 0.05 + (colorIntensity / 8.0);
+  for (int i = 0; i < 10; i++){
     uv = abs(uv);
     uv -= 0.5;
     uv *= 1.1;
@@ -35,8 +35,8 @@ void main(){
   }
   vec3 c_1 = vec3(
     length(uv + vec2(colorIntensity, colorIntensity)), 
-    length(uv + vec2(0.2, -0.3)),
-    length(uv + vec2(0.4, -0.2))
+    length(uv + vec2(0.2 + colorIntensity, -0.3)),
+    length(uv + vec2(0.4 + colorIntensity, -0.2))
   );
 
   // float loop_time = cos(6.0);
