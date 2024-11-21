@@ -143,7 +143,7 @@ class AudioVisualizer {
 		}
 
 		if (this.scene) {
-			this.scene.dispose();
+			// this.scene.dispose();
 		}
 	}
 }
