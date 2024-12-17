@@ -13,6 +13,7 @@
 	<li><a href="/visual_1">/visual_1</a></li>
 	<li><a href="/visual_2">/visual_2</a></li>
 	<li><a href="/visual_3">/visual_3</a></li>
+	<li><a href="/visual_4">/visual_4</a></li>
 </nav>
 
 {#key data.path}
